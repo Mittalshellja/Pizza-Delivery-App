@@ -7,12 +7,14 @@ import Header from '../components/Header'
 function Home() {
     return (
         <div>
+            <div><Navbar /></div>
             <div><Header/></div>
-            <div>
-                <Navbar />
-            </div>
-            <div><Cards/></div>
-            <div><Footer /></div>
+            <div className='flex nt-2 ml-3'>
+            <div  className='p-2 '><Cards/></div>
+            <div className='p-2'><Cards/></div>
+            <div className='p-2'><Cards/></div>
+            <div className='p-2'><Cards/></div></div>
+            <div className='p-2'><Footer /></div>
         </div>
     )
 }
