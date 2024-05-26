@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate} from 'react-router-dom'
 
 
 function Signup() {
+    let navigate = useNavigate();
     const [credentials, setCredentials] = useState({ name: "", email: "", password: "", location: "" })
+    const [hasSignedup, setHasSignedUp] = useState(false);
     const handleSubmit = async (e) => {
         e.preventDefault();
         const response = await fetch("http://localhost:5000/api/signup", {
@@ -23,7 +25,16 @@ function Signup() {
         if (!json.success) {
             alert("Enter valid credentials!")
         }
+        else{
+            setHasSignedUp(true)
+            alert("Successfully Signed Up. Redirecting to login page...");
+            navigate('/login');
+        }
     };
+    // const handleSignup=()=>{
+        
+    //     alert("Successfull Signed Up. Please click on already a user to login")
+    // }
 
     const onChange = (event) => {
         setCredentials({ ...credentials, [event.target.name]: event.target.value })
