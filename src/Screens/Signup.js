@@ -29,8 +29,8 @@ function Signup() {
         setCredentials({ ...credentials, [event.target.name]: event.target.value })
     }
     return (
-        <div>
-            <div className="w-full max-w-xs">
+        <div className='mt-40 content-center'>
+            <div className="flex justify-center w-full">
                 <form onSubmit={handleSubmit} className="bg-gray-500 shadow-md rounded px-8 pt-6 pb-8 mb-4">
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
@@ -70,7 +70,7 @@ function Signup() {
                             Sign Up
                         </button>
                         <div>
-                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                            <button className="ml-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                                 <Link className="inline-block align-baseline font-bold text-sm text-white hover:text-blue-800" to="/login">
                                     Already a user?
                                 </Link></button></div>

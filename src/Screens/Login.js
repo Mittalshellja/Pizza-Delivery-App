@@ -32,8 +32,8 @@ function Login() {
     setCredentials({ ...credentials, [event.target.name]: event.target.value })
   }
   return (
-    <div>
-      <div className="w-full max-w-xs">
+    <div className='mt-40 content-center'>
+      <div className="flex justify-center w-full ">
         <form onSubmit={handleSubmit} className="bg-gray-500 shadow-md rounded px-8 pt-6 pb-8 mb-4">
           
           <div className="mb-4">

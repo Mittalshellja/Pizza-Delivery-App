@@ -45,21 +45,21 @@ setSearch(e.target.value)
                 >
                     <div>
                         <img
-                            src="https://source.unsplash.com/random/200×200/?pizza"
+                            src="https://source.unsplash.com/random/200×250/?pizza"
                             alt="Wild Landscape"
                             className="block w-full h-96"
                         />
                     </div>
                     <div>
                         <img
-                            src="https://source.unsplash.com/random/200×200/?veg-pizza"
+                            src="https://source.unsplash.com/random/250×250/?veg-pizza"
                             alt="Camera"
                             className="block w-full h-96"
                         />
                     </div>
                     <div>
                         <img
-                            src="https://source.unsplash.com/random/200×200/?chicken-pizza"
+                            src="https://source.unsplash.com/random/250×250/?chicken-pizza"
                             alt="Exotic Fruits"
                             className="block w-full h-96"
                         />
